@@ -122,12 +122,13 @@ h3 {font-size: var(--fs-h3) }
     margin-bottom: 1em;
 }
 
+/*
 .section__subtitle--projects {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
-
+*/
 /* Header */
 header {
     display: flex;
@@ -286,12 +287,14 @@ header {
     text-align: center;
 }
 
-.section__title--experiences {
+.section__title--experiences, 
+.section__title--projects {
     color: var(--clr-accent);
     position: relative;
 }
 
-.section__title--experiences::after {
+.section__title--experiences::after, 
+.section__title--projects::after {
     /* need a content for it to show up  */
     content: '';
     display: block;
@@ -324,6 +327,8 @@ header {
         margin-left: 2em;
     }
 }
+
+/* About me */
 
 .about-me {
     max-width: 1000px;
