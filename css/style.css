@@ -382,6 +382,8 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    background-color: var(--clr-accent);
 }   
 
 .portfolio__item {
