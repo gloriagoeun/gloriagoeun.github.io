@@ -15,22 +15,22 @@
         <!-- can change fonts as needed -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         <header>
             <div class="logo">
-                <a href="index.html"><img src="img/gloriagoeun.png" alt=""></a>
+                <a href="../index.html"><img src="../img/gloriagoeun.png" alt=""></a>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#experiences" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#experiences" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="../index.html#projects" class="nav__link">My Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,23 +38,26 @@
         <!-- Introduction -->
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                <strong>GenRec</strong>Access to code <a href="https://github.com/gloriagoeun/spotify-genre-recognizer">here</a>
+                Spotify <strong> GenRec </strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Flask, spotipy, Random Trees</p>
-            <img src="img/genrec.png" alt="" class="intro__img">
+            
+            <!--<h2>Python, HTML, Flask, Random Trees, spotipy</h2> -->
+            <p class="section__subtitle section__subtitle--intro">Access to <a href="https://youtu.be/27vjwsEtTC8">demo</a></p>
+            <img src="../img/genrec.png" alt="" class="intro__img">
         </section>
 
         <div class="portfolio-individual-item">
-            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-            <img src="img/GenRec-screen.jpg" alt="">
-            <p>From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage.</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+            <p>The Spotify GenRec was a final project completed by my friend Kacie Lee (Pomona '24) and me for our class CS181Y: Computer Science for Inquiry at Harvey Mudd College. Using our knowledge of the <b>web framework Flask</b>, the <b>Python library spotipy</b>, and <b>random forests </b>for classification of data, we used the web API from Spotify to create a web engine (home page displayed below) that determines the genre of a playlist the user inputs from Spotify. </p>
+            <img src="../img/GenRec-screen.jpg" alt="">
+            <p>The idea for this project came up when reflecting on our daily experiences and how a lot of the times when people ask us about our music tastes, it is difficult to exactly pinpoint the genres we like. I used to often say as a respone, "Whatever sounds good to my ear," which is simply so vague! Both of us being avid Spotify users, we also noticed that Spotify does not explicitly categorize the genre of songs or playlists users create on their platform, so we wanted to do so using the data from the recommended public playlists Spotify has for some featured genres on their official account. <a href="https://open.spotify.com/playlist/37i9dQZF1DX70TzPK5buVf?si=e1d3bb3c342e48b4">Here</a> is an example of such a playlist we collected data from.</p>
+            <img src="../img/GenRec code snippet.png" alt="">
+            <p>Using the data from Spotify playlists for the seven genres we considered (gospel, pop, classical, edm, heavy metal, jazz, and funk), our code uses the random forests ML algorithm (as shown in the code snippet above) to classify the genre of each song on a user's playlist and returns the genre that is represented the most as the genre of the playlist, after looking at all of the features provided by Spotify's web API for each song and comparing them to the previously collected data. Due to privacy concerns and authentication with Spotify's web API, we are not sharing our code for this project publically. Yet, the demo of our web engine can be accessed in the link above and the final presentation slides can be viewed <a href="https://docs.google.com/presentation/d/1qbsWw_Nrb4FavrFOzO5HcxUO34TFiSiwfxAGI2JBHfI/edit?usp=sharing">here</a>. The presentation slides details more specifically on the process behind our work, and if interested, please feel free to contact me in the email below with any questions. </p>
         </div>
 
         <!-- footer -->
         <footer class="footer">
             <!-- email -->
-            <a href="mailto:gloriagoeun@gmail.com" class="footer__link">gloriagoeun@gmail.com</a>
+            <a href="mailto:ggla2020@mymail.pomona.edu" class="footer__link">ggla2020@mymail.pomona.edu</a>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="www.google.com">
                     <i class="fab fa-github"></i>
@@ -72,6 +75,6 @@
         </footer>
 
 
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
