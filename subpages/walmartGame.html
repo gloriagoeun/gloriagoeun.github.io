@@ -49,10 +49,16 @@
         </section>
 
         <div class="portfolio-individual-item">
-            <p>To showcase my understanding of <b>Java</b> and <b>object-oriented programming</b>, I created this 2D Game informally titled "Find the Bone! Return Home!" from scratch. The goal of this game is for you, as the lovely dog character, to retrieve five bones placed somewhere in the map and then return 'HOME' as fast as you can. Along the way, you may also find different items, such as the up and down arrows, that increase and decrease your speed. The game was written with the help from the tutorial/video series <a href="https://www.youtube.com/watch?v=om59cwR7psI&list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq" target="_blank">'How to Make a 2D Game in Java'</a> by RyiSnow on YouTube. All of the pixel art and music was created by me using the platforms <a href="piskelapp.com/p/create/sprite" target="_blank">Piskel</a> and <a href="https://beepbox.co/" target="_blank">BeepBox</a>.</p> 
-            <img src="../img/findTheBone.png" alt="">
-            <p>Through this process, I was able to learn a lot more about the mechanisms behind running and designing a game, such as how to best format the game loop and tricks to best optimize and improve rendering performance. This project was a joy to develop and design, so I hope you enjoy walking around my world! Woof woof!</p>
-            <img src="../img/findTheBoneEnd.png" alt="">
+            <p>A brief description of the game: Text-based adventure game where the player is a child who is sent to search through aisles in a Walmart for Sriracha and bring it back to the cashier before they finish billing!</p> 
+            <p> For the features we implemented...</p>
+            <ul>
+                <li>Resource logic: limited amount of time - to stress the user out and make them more confused, we had a time limit of 200 seconds. If they did not make it back to the cashier in 200 seconds with the sriracha, they lost the game!</li>
+                <li>Penalty system: We also had a penalty system, where if they responded incorrectly to the question “Is the sriracha here?”, they would be redirected back to the cashier and need to 'restart' the game</li>
+                <li>Music, typewriter, sleep & duration: We also had beeping music playing in the introduction to produce the ambience of a grocery store. The typewriter also produced a cool UI effect with the text, and we used the sleep & duration functions in rust. </li>
+                <li>Title screen: We implemented a 'title screen' when the player starts the game. It displays the title of our game, as well as a cool graphic made with ascii symbols. In this title screen, we also place our user in the setting of the game through description. </li>
+                <li>Some kind of interactive interface element: The way that users interact with our game to navigate through the aisles is through user input, where we show the users what options they have (yes/no input && directions input) and the game responds to their input. </li>
+            </ul>
+            <p> Please feel free to check out text-based game out on your coding environment!</p>
         </div>
 
         <!-- footer -->
